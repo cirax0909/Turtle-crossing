@@ -14,7 +14,7 @@ score = Scoreboard()
 
 game_is_on = True
 while game_is_on:
-    time.sleep(car.move_speed)
+    time.sleep(0.1)
     screen.update()
     car.car_create()
     car.move()
