@@ -20,8 +20,9 @@ while game_is_on:
     screen.update()
     car.car_create()
     car.move()
+
     for new_car in car.all_car:
-        if player.distance(new_car) < 50:
+        if new_car.distance(player) < 20:
             game_is_on = False
             score.update_scoreboard()
 
